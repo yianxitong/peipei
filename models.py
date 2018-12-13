@@ -5,13 +5,13 @@ class Grades(models.Model):
     gname=models.CharField(max_length=20)
     gdate=models.DateTimeField()
     ggirlnum=models.IntegerField()
-    gboynum=models.IntegerField()
     isDelete=models.BooleanField()
 
 class Students(models.Model):
     sname=models.CharField(max_length=20)
     sgender=models.BooleanField(default=True)
-    sage=models.IntegerField()
+    snum=models.integerField()
+    
     scontend=models.CharField(max_length=20)
     isDelete=models.BooleanField(default=False)
 
